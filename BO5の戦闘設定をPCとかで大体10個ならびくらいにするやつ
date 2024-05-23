@@ -1,0 +1,19 @@
+// ==UserScript==
+// @name         BO5の戦闘設定をPCとかで大体10個ならびくらいにするやつ
+// @namespace    http://tampermonkey.net/
+// @version      2024-05-23
+// @author       Kanzaki Hisahito
+// @match        https://wdrb.work/bo5/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=wdrb.work
+// @grant        none
+// ==/UserScript==
+
+
+    // 戦闘設定をだいたい10個区切りで改行させるスクリプト
+    // めちゃくちゃ素人が初めて作ったスクリプトだからあんまり信用しないでね
+    // 構成もかなり適当なので導入の際は自己責任で
+
+'use strict';
+    const text = document.querySelector('.battle_style');
+    text.style.width = "800px";
+    text.style.margin = "auto" ;
